@@ -12,6 +12,7 @@ namespace RestaurantApp
         public string nom { get; set; }
         public int prix { get; set; }
 
+
         public Plat(string id, string nom, int prix)
         {
             this.id = id;

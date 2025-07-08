@@ -8,7 +8,7 @@ namespace RestaurantApp
 {
     internal class Menu
     {
-        List<Plat> menu = new List<Plat>();
+        public List<Plat> ListePlat { get; private set; } = new List<Plat>();
 
         public void addPlat()
         {
@@ -26,15 +26,14 @@ namespace RestaurantApp
                 Console.Write($"\nQuel est le Prix du {nom}: ");
                 int prix = Convert.ToInt32(Console.ReadLine());
 
-                Plat plat = new Plat(id, nom, prix);
-                menu.Add(plat);
+                ListePlat.Add(new Plat(id, nom, prix));
             }
         }
-        
+
         public void showMenu()
         {
             Console.WriteLine("\n--- Menu Complet ---");
-            foreach (Plat plat in menu)
+            foreach (Plat plat in ListePlat)
             {
                 Console.WriteLine(plat);
             }

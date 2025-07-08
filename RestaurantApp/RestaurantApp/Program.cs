@@ -10,17 +10,24 @@ namespace RestaurantApp
     {
         static void Main(string[] args)
         {
-            /*Creation de menu et affichage:
+            //Creation de menu et affichage:
             Menu menu = new Menu();
 
             menu.addPlat();
             menu.showMenu();
-            */
+           
 
-            Commande C1 = new Commande();
-            C1.PrendreLaCommande();
+        // Création et prise de commande
+        Commande c1 = new Commande(menu);
+        c1.PrendreLaCommande();
 
-            Console.WriteLine($"\nLe client portant l'ID: '{C1.client.id}' a passee sa commande");
+            Console.WriteLine($"\nRésumé de la commande du client {c1.client.nom} :");
+            foreach (var p in c1.Plats)
+            {
+                Console.WriteLine($"- {p.nom} : {p.prix} Ar");
+            }
+
+          //  Console.WriteLine($"\nLe client portant l'ID: '{C1.client.id}' a passee sa commande");
 
         Console.ReadKey();
         }
