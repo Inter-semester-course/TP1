@@ -1,0 +1,8 @@
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\bin\Debug\RestaurantApp.exe.config
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\bin\Debug\RestaurantApp.exe
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\bin\Debug\RestaurantApp.pdb
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\obj\Debug\RestaurantApp.csproj.AssemblyReference.cache
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\obj\Debug\RestaurantApp.csproj.SuggestedBindingRedirects.cache
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\obj\Debug\RestaurantApp.csproj.CoreCompileInputs.cache
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\obj\Debug\RestaurantApp.exe
+D:\Cours Mr Mamitiana\pratique\TP1\RestaurantApp\RestaurantApp\obj\Debug\RestaurantApp.pdb
