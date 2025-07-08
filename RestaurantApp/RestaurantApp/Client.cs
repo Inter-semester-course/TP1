@@ -12,12 +12,16 @@ namespace RestaurantApp
         public string nom { get; set; }
         public string contact { get; set; }
 
-        public Client()
+        public Client(string id, string nom, string contact)
         {
-            id = "INCONNU";
-            nom = "INCONNU";
-            contact = "INCONNU";
+            this.id = id;
+            this.nom = nom;
+            this.contact = contact;
         }
 
+        public override string ToString()
+        {
+            return $"ID: {id}, Nom: {nom}, Contact: {contact}";
+        }
     }
 }

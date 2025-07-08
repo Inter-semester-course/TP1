@@ -20,10 +20,10 @@ namespace RestaurantApp
                 if (nom.ToLower() == "stop")
                     break;
 
-                Console.Write($"Quel est l'ID du {nom}: ");
+                Console.Write($"\nQuel est l'ID du {nom}: ");
                 string id = Console.ReadLine();
 
-                Console.Write($"Quel est le Prix du {nom}: ");
+                Console.Write($"\nQuel est le Prix du {nom}: ");
                 int prix = Convert.ToInt32(Console.ReadLine());
 
                 Plat plat = new Plat(id, nom, prix);
