@@ -10,19 +10,12 @@ namespace RestaurantApp
     {
         static void Main(string[] args)
         {
-            Plat P1 = new Plat();
-            Console.Write("Quel est le nom du plat: ");
-            P1.nom = Console.ReadLine();
-            Console.Write($"Quel est l'ID du {P1.nom}: ");
-            P1.id = Console.ReadLine();
-            Console.Write($"Quel est le Prix du {P1.nom}: ");
-            P1.prix = Convert.ToInt32(Console.ReadLine());
+            Menu menu = new Menu();
 
-            Console.WriteLine($"Le plat portant l'ID: {P1.id} est le: {P1.nom}");
+            menu.addPlat();
+            menu.showMenu();
 
-            P1.addNewPlat();
-
-            Console.ReadKey();
+        Console.ReadKey();
         }
     }
 }

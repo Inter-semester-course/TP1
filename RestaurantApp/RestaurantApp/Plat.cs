@@ -12,18 +12,16 @@ namespace RestaurantApp
         public string nom { get; set; }
         public int prix { get; set; }
 
-        public Plat()
+        public Plat(string id, string nom, int prix)
         {
-            id = "INCONNU";
-            nom = "INCONNU";
-            prix = 0;
+            this.id = id;
+            this.nom = nom;
+            this.prix = prix;
         }
 
-        public List<Plat> Plats = new List<Plat>();
-        public void addNewPlat()
+        public override string ToString()
         {
-            Plats.Add(new Plat() { id = id, nom = nom, prix = prix });
-            Console.WriteLine(Plats);
+            return $"ID: {id}, Nom: {nom}, Prix: {prix} Ar";
         }
     }
 }
