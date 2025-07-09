@@ -35,6 +35,19 @@ namespace RestaurantApp
             this.client = new Client("", "", "");
         }
 
+        public void AfficherResume()
+        {
+            Console.WriteLine($"\nRésumé de la commande du client {client.nom} :");
+
+            int sum = 0;
+            foreach (var p in Plats)
+            {
+                Console.WriteLine($"- {p.nom} : {p.prix} Ar");
+                sum += p.prix;
+            }
+
+            Console.WriteLine($"\nLe total des prix est de : {sum} Ar");
+        }
 
         public void PrendreLaCommande()
         {
